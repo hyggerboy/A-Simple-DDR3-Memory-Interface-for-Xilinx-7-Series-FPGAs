@@ -1,0 +1,47 @@
+# Vivado generated files
+*.jou
+*.log
+*.str
+*.wdb
+*.wcfg
+*.bit
+*.bin
+*.ltx
+*.dcp
+
+.cache/
+.hw/
+.ip_user_files/
+.runs/
+.sim/
+.gen/
+.Xil/
+
+# Vivado project files
+*.xpr
+*.os
+*.pb
+
+# Simulation output
+sim.out
+*.vcd
+*.fst
+
+# Python
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# LaTeX temporary files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
