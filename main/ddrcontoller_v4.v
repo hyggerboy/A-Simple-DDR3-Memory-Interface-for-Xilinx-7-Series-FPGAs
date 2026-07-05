@@ -22,16 +22,9 @@ module ddrcontroller_v4 (
     output wire refresh_w
 );
 
-//ila_3 your_instance_name (
-//	.clk(fast_clk), // input wire clk
 
 
-//	.probe0(active_or_not), // input wire [0:0]  probe0  
-//	.probe1(open_col), // input wire [13:0]  probe1 
-//	.probe2(col_adresse) // input wire [13:0]  probe2
-//);
-
-
+//state off ddrconroller used for debug 
     assign c_state = state;
  
     parameter hold_reset_time = 200_00;

@@ -1,5 +1,7 @@
 `timescale 1ns/1ns
 
+//thist module combines the phy and the ddr contoller in one module 
+
 module top_ddrcontroller_v3 (
     input  [1:0] operation,
     output [127:0] data_out,

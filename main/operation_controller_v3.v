@@ -132,7 +132,7 @@ reg [7:0] wrtie_date;
 wire DDR_busy;
 
 reg [1:0] operation;
-
+//used for debug
 wire [31:0] data_in;
 
 wire [127:0] output_data_w;
@@ -141,6 +141,7 @@ wire [127:0] output_data_w;
 
 wire fast_clk;
 wire cal_fail_flag;
+//state off ddr conroler used for debug
 wire  [3:0] c_state;
 wire [4:0] cnt_dely_w;
 
@@ -190,7 +191,7 @@ top_ddrcontroller_v3 dut(
     .WM1_w(WM1_w),
     .data_masking(data_masking)
 );
-
+//use to find then the refish happenede
 wire refresh_w;
 
 

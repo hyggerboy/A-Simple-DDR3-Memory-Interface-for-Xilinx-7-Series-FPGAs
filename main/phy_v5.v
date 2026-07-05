@@ -88,7 +88,7 @@ end
 
 genvar i;
 
- 
+ //DQ buffer
 generate
     for (i = 0; i < 16; i = i + 1) begin : gen_dq_iobuf
 
@@ -160,7 +160,7 @@ wire reset_for_Oser_DQ;
 
 reg [5:0] cnt_DQ = 0; 
 
-
+//reset used for all  
 assign reset_for_Oser_DQS = ~ddr_reset;
 
 
@@ -172,6 +172,8 @@ localparam ideal = 3'b000, start = 3'b001, start2 = 3'b010, start3 = 2'b011, sta
 
 
 reg [2:0] state = ideal , next_state; 
+
+//FSM for write 
 
 always @* begin
     next_state = state;
@@ -236,6 +238,8 @@ localparam ideal_DQ = 2'b00, start_DQ = 2'b01,start_DQ_2 = 2'b10;
 
 reg [1:0] state_DQ, next_state_DQ; 
 
+
+//FSM for read 
 always @* begin
 
 next_state_DQ = state_DQ;
