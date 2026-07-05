@@ -38,7 +38,6 @@ The configuration is shown here:
  
 ![Clocking Wizard configuration](docs/clocking_wizard.png)
  
-> Add your Clocking Wizard screenshot at `docs/clocking_wizard.png`, or update the path above.
  
 ## Signal naming
  
